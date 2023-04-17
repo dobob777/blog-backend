@@ -5,6 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
+require('./mongoDB/mongooes')
 
 app.listen(1030, () => {
     console.log("Sever Start...");
