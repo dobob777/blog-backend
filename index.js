@@ -14,3 +14,7 @@ app.listen(1030, () => {
 app.get("/api", (req, res) => {
     return res.json({ message: "message" });
 });
+
+app.use('/',(req,res)=>{
+    return res.send("<h1 align='center'>Blog Backend</h1>");
+})
