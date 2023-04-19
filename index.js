@@ -18,3 +18,4 @@ app.get("/api", (req, res) => {
 app.use('/',(req,res)=>{
     return res.send("<h1 align='center'>Blog Backend</h1>");
 })
+console.log("Hello World!......");
