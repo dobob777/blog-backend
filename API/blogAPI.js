@@ -35,13 +35,13 @@ app.use(express.json());
 
 router.post('/createBlog', upload.single("image"), async (req, res) => {
     try {
-        console.log('req.body::: ', req.body);
+        console.log('req::: ', req.file.originalname);
+        console.log('req.body.data::: ', req.body.data);
         res.send({ responce: "sended" })
     } catch (error) {
         res.send({ err: error })
         console.log('error::: ', error);
     }
 })
-
 
 module.exports = router;
